@@ -1,0 +1,123 @@
+import { Box, Button, Container } from "@mui/material";
+import SectionOne from "../sections/SectionOne";
+import SectionTwo from "../sections/SectionTwo";
+import pj1 from "../assets/images/pj1.png";
+import pj2 from "../assets/images/pj2.png";
+import pj3 from "../assets/images/pj3.png";
+import pj4 from "../assets/images/pj4.png";
+import upArrow from "../assets/images/arrow-up-right.png";
+import SectionThree from "../sections/SectionThree";
+import SectionFour from "../sections/SectionFour";
+import ContactMe from "../sections/ContactMe";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import { useEffect } from "react";
+import SectionTwoSlide from "../components/SectionTwoSlide";
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+  const navigate = useNavigate();
+  const slideData = {
+    image: [
+      {
+        title: "BINFO APPLICATION1 APPLICATION1",
+        img: pj1,
+      },
+      {
+        title: "BINFO APPLICATION",
+        img: pj2,
+      },
+      {
+        title: "BINFO APPLICATION3",
+        img: pj3,
+      },
+      {
+        title: "BINFO APPLICATION",
+        img: pj4,
+      },
+    ],
+    action: {
+      pause: true,
+      play: true,
+      direction: "right",
+    },
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <Box
+      sx={{
+        bgcolor: "#000000",
+        overflow: {
+          xl: "visible",
+          lg: "visible",
+          md: "visible",
+          sm: "hidden",
+          xs: "hidden",
+        },
+      }}
+    >
+      <Nav />
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
+        {/* section one */}
+      </Box>
+      <Box sx={{ bgcolor: "#000000" }}>
+        <Container maxWidth="lg">
+          <SectionOne />
+        </Container>
+      </Box>
+      {/* section two  */}
+      <Box sx={{ bgcolor: "#ffffff" }}>
+        <Container maxWidth="lg">
+          <SectionTwo />
+        </Container>
+        <SectionTwoSlide slideData={slideData} />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Button
+            onClick={() => navigate("/my-work/app")}
+            variant="contained"
+            sx={{
+              mt: "35px",
+              mb: "70px",
+              width: { xl: 200, lg: 200, md: 180, sm: 180, xs: 180 },
+              height: { xl: 63, lg: 63, md: 54, sm: 56, xs: 56 },
+              borderRadius: "50px",
+              backgroundColor: "#FF0B55",
+            }}
+          >
+            More Projects <img width={24} height={24} src={upArrow} />
+          </Button>
+        </Box>
+      </Box>
+      {/* section three  */}
+      <Box sx={{ bgcolor: "#000000" }}>
+        <Container maxWidth="lg">
+          <SectionThree />
+        </Container>
+      </Box>
+      {/* section four  */}
+      <Box sx={{ bgcolor: "#ffffff" }}>
+        <Container maxWidth="lg">
+          <SectionFour />
+        </Container>
+      </Box>
+      {/* contact me  */}
+      <Box id="contactMe" sx={{ bgcolor: "#000000" }}>
+        <Container maxWidth="lg">
+          <ContactMe />
+        </Container>
+      </Box>
+      {/* footer  */}
+      <Footer />
+    </Box>
+  );
+};
+export default Home;
