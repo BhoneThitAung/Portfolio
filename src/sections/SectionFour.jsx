@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import ReviewCard from "../components/ReviewCard";
-import avatarImage from "../assets/images/avatar.jpeg";
+import avatarImage from "../assets/images/Person-1.png";
 import Question from "../components/Question";
 import ButtonResume from "../components/Button_resume";
 
