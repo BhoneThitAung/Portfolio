@@ -132,7 +132,7 @@ export const education = {
   title: "education",
   data: [
     {
-      date: "2014 - 2015",
+      date: "2015 - 2015",
       title: "University Entrance Exam (Passed)",
       content:
         "I studied at No.( 2 ) Basic Education High School, Pathein. In the 2014 - 2015 academic year, I successfully passed the university entrance exam. Then in 2016, I studied at Pathein University.",
