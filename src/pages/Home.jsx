@@ -5,6 +5,7 @@ import pj1 from "../assets/images/pj1.png";
 import pj2 from "../assets/images/pj2.png";
 import pj3 from "../assets/images/pj3.png";
 import pj4 from "../assets/images/pj4.png";
+import pj5 from "../assets/images/pj5.png";
 import upArrow from "../assets/images/arrow-up-right.png";
 import SectionThree from "../sections/SectionThree";
 import SectionFour from "../sections/SectionFour";
@@ -20,20 +21,24 @@ const Home = () => {
   const slideData = {
     image: [
       {
-        title: "BINFO APPLICATION1 APPLICATION1",
+        title: "BINFO",
         img: pj1,
       },
       {
-        title: "BINFO APPLICATION",
+        title: "BUZFIT",
         img: pj2,
       },
       {
-        title: "BINFO APPLICATION3",
+        title: "FLATSHAR Room & Roomate",
         img: pj3,
       },
       {
-        title: "BINFO APPLICATION",
+        title: "Pwal Property Sell & Rent",
         img: pj4,
+      },
+      {
+        title: "Datsi",
+        img: pj5,
       },
     ],
     action: {
