@@ -1,11 +1,6 @@
 import { Box, Button, Container } from "@mui/material";
 import SectionOne from "../sections/SectionOne";
 import SectionTwo from "../sections/SectionTwo";
-import pj1 from "../assets/images/pj1.png";
-import pj2 from "../assets/images/pj2.png";
-import pj3 from "../assets/images/pj3.png";
-import pj4 from "../assets/images/pj4.png";
-import pj5 from "../assets/images/pj5.png";
 import upArrow from "../assets/images/arrow-up-right.png";
 import SectionThree from "../sections/SectionThree";
 import SectionFour from "../sections/SectionFour";
@@ -13,40 +8,15 @@ import ContactMe from "../sections/ContactMe";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
-import SectionTwoSlide from "../components/SectionTwoSlide";
+import SectionTwoSlide from "../components/ProjectSlider";
 import { useNavigate } from "react-router-dom";
+import { projectData } from '../store/projectData.store';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   const navigate = useNavigate();
-  const slideData = {
-    image: [
-      {
-        title: "BINFO",
-        img: pj1,
-      },
-      {
-        title: "BUZFIT",
-        img: pj2,
-      },
-      {
-        title: "FLATSHAR Room & Roomate",
-        img: pj3,
-      },
-      {
-        title: "Pwal Property Sell & Rent",
-        img: pj4,
-      },
-      {
-        title: "Datsi",
-        img: pj5,
-      },
-    ],
-    action: {
-      pause: true,
-      play: true,
-      direction: "right",
-    },
-  };
+
+    const sliderData = projectData.filter(data => data.slider);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -78,7 +48,7 @@ const Home = () => {
         <Container maxWidth="lg">
           <SectionTwo />
         </Container>
-        <SectionTwoSlide slideData={slideData} />
+        <SectionTwoSlide slideData={sliderData} />
         <Box
           sx={{
             display: "flex",
@@ -87,6 +57,10 @@ const Home = () => {
           }}
         >
           <Button
+            component={motion.button}
+            whileInView={{y:0}}
+            initial={{ y: 100 }}
+            transition={{ type: "spring", stiffness: 20 }}
             onClick={() => navigate("/my-work/app")}
             variant="contained"
             sx={{

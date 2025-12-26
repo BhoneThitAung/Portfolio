@@ -1,8 +1,13 @@
 import { Avatar, Box, Typography } from "@mui/material";
+import { motion } from 'framer-motion';
 
 const ReviewCard = ({ data }) => {
   return (
     <Box
+     component={motion.div}
+            whileInView={{opacity : 1,y:0}}
+            initial = {{opacity: 0,y:200}}
+            transition={{ type: "spring", stiffness: 20 }}
       sx={{
         display: "flex",
         flexWrap: "wrap",
@@ -62,6 +67,13 @@ const ReviewCard = ({ data }) => {
               alignItems: "center",
               gap: "10px",
               mb: "30px",
+              width: {
+                xl: "290px",
+                lg: "290px",
+                md: "290px",
+                sm: "290px",
+                xs: "275px",
+              },
             }}
           >
             <Avatar src={data.avatar} />

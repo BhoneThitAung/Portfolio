@@ -1,27 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
 import profileImg from "../assets/images/profile.png";
 import heart from "../assets/images/fluent-emoji_white-heart.png";
-import slide1 from "../assets/images/logo_slide_1.png";
-import slide2 from "../assets/images/logo_slide_2.png";
-import slide3 from "../assets/images/logo_slide_3.png";
-import slide4 from "../assets/images/logo_slide_4.png";
-import slide5 from "../assets/images/logo_slide_5.png";
-import SectionSlider from "../components/SectionSlider";
+import LogoSlider from "../components/LogoSlider";
+import {logoSliderData} from '../store/logoSlider.store';
 import { motion } from "framer-motion";
 
 const SectionOne = () => {
-  const slideData = {
-    image: [slide1, slide2, slide3, slide4, slide5],
-    width: 128,
-    height: 65,
-    marginLeft: "150px",
-    action: {
-      pause: true,
-      hover: false,
-      play: true,
-      direction: "left",
-    },
-  };
 
   return (
     <Box
@@ -57,10 +41,10 @@ const SectionOne = () => {
         >
           <Box
             component={motion.div}
-            initial={{ y: -500 }} // start hidden
-            animate={{ y: 0 }} // fade in
+            whileInView={{y:0}}
+            initial={{ y: -50 }} // start hidden
             // exit={{ opacity: 0 }} // fade out (when removed)
-            transition={{ type: "spring", stiffness: 500 }}
+            transition={{ type: "spring", stiffness: 30 }}
           >
             <Typography
               sx={{
@@ -88,6 +72,11 @@ const SectionOne = () => {
             </Typography>
           </Box>
           <Typography
+          component={motion.p}
+             whileInView={{y:0}}
+            initial={{ y: 80 }}// fade in
+            // exit={{ opacity: 0 }} // fade out (when removed)
+            transition={{ type: "spring", stiffness: 20 }}
             sx={{
               fontWeight: 400,
               width: {
@@ -118,7 +107,11 @@ const SectionOne = () => {
           }}
         >
           <Box
-            component={"img"}
+           component={motion.img}
+             whileInView={{x:0}}
+            initial={{ x: 100 }}
+            // exit={{ opacity: 0 }} // fade out (when removed)
+            transition={{ type: "spring", stiffness: 20 }}
             src={profileImg}
             sx={{
               width: {
@@ -141,6 +134,11 @@ const SectionOne = () => {
       </Box>
       <Box>
         <Button
+           component={motion.button}
+             whileInView={{y:0}}
+            initial={{ y: -100 }}
+            // exit={{ opacity: 0 }} // fade out (when removed)
+            transition={{ type: "spring", stiffness: 20 }}
           variant="contained"
           sx={{
             borderRadius: "50px",
@@ -153,6 +151,10 @@ const SectionOne = () => {
           </Typography>
         </Button>
         <Typography
+            component={motion.p}
+            whileInView={{x:0}}
+            initial={{ x: -100 }}
+            transition={{ type: "spring", stiffness: 20 }}
           sx={{
             mt: "16px",
             fontStyle: "italic",
@@ -190,7 +192,7 @@ const SectionOne = () => {
         </Typography>
       </Box>
       <Box sx={{ mt: "50px", mb: "37px" }}>
-        <SectionSlider slideData={slideData} />
+        <LogoSlider slideData={logoSliderData} />
       </Box>
     </Box>
   );
