@@ -1,7 +1,7 @@
 import { Box, Container, Divider, Typography } from "@mui/material";
 import logoImage from "../assets/images/Logo/Logo-white.svg";
 import facebookImage from "../assets/images/facebook.png";
-import instagramImage from "../assets/images/instagram.png";
+import behanceImage from "../assets/images/behance.png";
 import linkedinImage from "../assets/images/linkedin.png";
 
 const Footer = () => {
@@ -42,9 +42,9 @@ const Footer = () => {
           Copyright © 2020. Freddie. All rights reserved.
         </Typography>
         <Box sx={{ display: "flex", gap: "32px", cursor: "pointer" }}>
-          <img src={linkedinImage} width={28} height={28} />
-          <img src={facebookImage} width={28} height={28} />
-          <img src={instagramImage} width={28} height={28} />
+          <a href="https://www.linkedin.com/in/bhone-thit-aung-freddie-360558258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src={linkedinImage} width={28} height={28} /></a>
+          <a href="https://www.facebook.com/share/1CvoKv87iU/?mibextid=wwXIfr"><img src={facebookImage} width={28} height={28} /></a>
+          <a href="https://www.behance.net/askingaaskinga/projects"><img src={behanceImage} width={28} height={28} /></a>
         </Box>
       </Container>
     </Box>

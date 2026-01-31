@@ -87,9 +87,9 @@ const About = () => {
             >
               I am a UI/UX Designer with a strong passion for creating designs.
               I have over 4 years in Website and application designs. My
-              strengths are my creativity, catching deadlines, user experiences
+              strengths are creativity, catching deadlines, user experiences
               and multitasking. I would like to share my skills and experience
-              with a reputable organization so expend my learnings, knowledge
+              with a reputable organization to expend my learnings, knowledge
               and skills.
             </Typography>
             <Box

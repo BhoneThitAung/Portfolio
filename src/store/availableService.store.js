@@ -9,7 +9,7 @@ export const cardData = [
         No: 1,
         title: "UI/UX DESIGN",
         content:
-          "I design user-focused digital interfaces that are both visually appealing and highly functional — perfect for apps, websites, and product improvements.",
+          "I design user-focused digital interfaces that are both visually appealing and highly functional — perfect for apps, websites and product improvements.",
         image: card1,
       },
     },
@@ -18,7 +18,7 @@ export const cardData = [
         No: 2,
         title: "BRANDING",
         content:
-          "Build a strong visual identity that leaves a lasting impression. My logo and branding services are crafted to help businesses stand out with a unique, memorable — and consistent brand image.",
+          "Build a strong visual identity that leaves a lasting impression. My logo — branding services are crafted to help businesses stand out with a unique, memorable and consistent brand image.",
         image: card2,
       },
     },
@@ -27,7 +27,7 @@ export const cardData = [
         No: 3,
         title: "Illustration",
         content:
-          "I create custom, high-quality illustrations to bring your ideas to life—perfect for branding, stories, or campaigns that need eye-catching visuals.",
+          "I create custom, high-quality illustrations to bring your ideas to life — perfect for branding, stories, or campaigns that need eye-catching visuals.",
         image: card3,
       },
     },
