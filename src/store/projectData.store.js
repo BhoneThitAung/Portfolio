@@ -1,40 +1,40 @@
 import imageOne from "../assets/images/Project Details Images/Binfo1.png";
 
 
-import Binfo from "../assets/images/My work-Application Image/Binfo-Application.png";
-import Buzfit from "../assets/images/My work-Application Image/Buzfit.-Application.png";
-import Flatshar from "../assets/images/My work-Application Image/Flatshar-Application.png";
-import Pwal from "../assets/images/My work-Application Image/Pwal-Application.png";
-import Datsi from "../assets/images/My work-Application Image/Datsi-Application.png";
-import NextWave from "../assets/images/My work-Application Image/The Next Wave-Application.png";
-import EazySalary from "../assets/images/My work-Application Image/Eazy Salary-Application.png";
+import Binfo from "../assets/images/Mywork-Application-Image/Binfo-Application.png";
+import Buzfit from "../assets/images/Mywork-Application-Image/Buzfit.-Application.png";
+import Flatshar from "../assets/images/Mywork-Application-Image/Flatshar-Application.png";
+import Pwal from "../assets/images/Mywork-Application-Image/Pwal-Application.png";
+import Datsi from "../assets/images/Mywork-Application-Image/Datsi-Application.png";
+import NextWave from "../assets/images/Mywork-Application-Image/TheNextWave-Application.png";
+import EazySalary from "../assets/images/Mywork-Application-Image/EazySalary-Application.png";
 
 
-import Ruby from "../assets/images/My work-Logo Image/Beauty By Ruby-Logo.png";
-import Bloomea from "../assets/images/My work-Logo Image/Bloome'a-Logo.png";
-import AsianKoel from "../assets/images/My work-Logo Image/Asian Koel-Logo.png";
-import PannNguWahr from "../assets/images/My work-Logo Image/Pann Nguwahr-Logo.png";
-import DesignHouse from "../assets/images/My work-Logo Image/Design House-Logo.png";
-import Pwallogo from "../assets/images/My work-Logo Image/Pwal-Logo.png";
-import A2Myanmar from "../assets/images/My work-Logo Image/A2-Myanmar-Logo.png";
-import Zcornor from "../assets/images/My work-Logo Image/Zcornor-Logo.png";
-import HtooAutoService from "../assets/images/My work-Logo Image/Htoo Auto Service-Logo.png";
-import LogicX from "../assets/images/My work-Logo Image/Logic-X-Logo.png";
-import EarthLike from "../assets/images/My work-Logo Image/Earthlike-Logo.png";
-import Scratch from "../assets/images/My work-Logo Image/Scratch DJ Academy-Logo.png";
-import Nextwave from "../assets/images/My work-Logo Image/The Next Wave-Logo.png";
+import Ruby from "../assets/images/Mywork-Logo-Image/BeautyByRuby-Logo.png";
+import Bloomea from "../assets/images/Mywork-Logo-Image/Bloome'a-Logo.png";
+import AsianKoel from "../assets/images/Mywork-Logo-Image/AsianKoel-Logo.png";
+import PannNguWahr from "../assets/images/Mywork-Logo-Image/PannNguwahr-Logo.png";
+import DesignHouse from "../assets/images/Mywork-Logo-Image/DesignHouse-Logo.png";
+import Pwallogo from "../assets/images/Mywork-Logo-Image/Pwal-Logo.png";
+import A2Myanmar from "../assets/images/Mywork-Logo-Image/A2-Myanmar-Logo.png";
+import Zcornor from "../assets/images/Mywork-Logo-Image/Zcornor-Logo.png";
+import HtooAutoService from "../assets/images/Mywork-Logo-Image/HtooAutoService-Logo.png";
+import LogicX from "../assets/images/Mywork-Logo-Image/Logic-X-Logo.png";
+import EarthLike from "../assets/images/Mywork-Logo-Image/Earthlike-Logo.png";
+import Scratch from "../assets/images/Mywork-Logo-Image/ScratchDJAcademy-Logo.png";
+import Nextwave from "../assets/images/Mywork-Logo-Image/TheNextWave-Logo.png";
 
-import Binfoweb from "../assets/images/My work-Website Image/Binfo-Website.png";
-import Pwalweb from "../assets/images/My work-Website Image/Pwal-Website.png";
-import Buzfitweb from "../assets/images/My work-Website Image/Buzfit-Website.png";
-import Nextwaveweb from "../assets/images/My work-Website Image/The Next Wave-Website.png";
-import Zcornorweb from "../assets/images/My work-Website Image/Zcornor-Website.png";
-import CoheShopweb from "../assets/images/My work-Website Image/Coheshop-Website.png";
-import TechHouseweb from "../assets/images/My work-Website Image/Techhouse-Website.png";
-import EFPaintingweb from "../assets/images/My work-Website Image/株式会社 EFジャパン-Website.png";
-import Miclosolutionweb from "../assets/images/My work-Website Image/Miclo Solution-Website.png";
-import MinnLanweb from "../assets/images/My work-Website Image/Minn Lan-Website.png";
-import Holdblayweb from "../assets/images/My work-Website Image/Holdblay-Website.png";
+import Binfoweb from "../assets/images/Mywork-Website-Image/Binfo-Website.png";
+import Pwalweb from "../assets/images/Mywork-Website-Image/Pwal-Website.png";
+import Buzfitweb from "../assets/images/Mywork-Website-Image/Buzfit-Website.png";
+import Nextwaveweb from "../assets/images/Mywork-Website-Image/TheNextWave-Website.png";
+import Zcornorweb from "../assets/images/Mywork-Website-Image/Zcornor-Website.png";
+import CoheShopweb from "../assets/images/Mywork-Website-Image/Coheshop-Website.png";
+import TechHouseweb from "../assets/images/Mywork-Website-Image/Techhouse-Website.png";
+import EFPaintingweb from "../assets/images/Mywork-Website-Image/株式会社EFジャパン-Website.png";
+import Miclosolutionweb from "../assets/images/Mywork-Website-Image/MicloSolution-Website.png";
+import MinnLanweb from "../assets/images/Mywork-Website-Image/MinnLan-Website.png";
+import Holdblayweb from "../assets/images/Mywork-Website-Image/Holdblay-Website.png";
 
 
 
