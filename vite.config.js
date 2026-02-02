@@ -9,5 +9,15 @@ export default defineConfig({
     open: true,
     host: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          vendor: ['axios', 'lodash']
+        }
+      }
+    }
+  },
   base: "/",
 });
